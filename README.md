@@ -3,6 +3,8 @@ I am Tousif Tasrik student of university of scholars
 I found the way to make it work. So, i am sharing the method. 
 Any Queries you can get me in discord: tousiftasrik
 
+Education must be free
+
 ---
 # Installation of Oracle21C Express Edition in Ubuntu 22.04+
 
