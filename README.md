@@ -1,6 +1,6 @@
 I am Tousif Tasrik student of university of scholars
 14th batch CSE. I am struggling to install the oracle21c express edition on the uubuntu.
-I found the way to make it work. So, i am sharing the method. 
+I found the way to make it work. So, i am sharing the method. 🌠
 
 ---
 # 🚀 Install Oracle 21C Express Edition on Ubuntu 22.04+ using Docker 🐳  
