@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+<!-- saved from url=(0039)https://dillinger.io/factory/fetch_html -->
 <html>
 
 <head>
-  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Installation of Oracle21C Express Edition in Ubuntu 22.04+.md</title>
   <style>
     @charset "UTF-8";
@@ -5610,100 +5611,125 @@
 </head>
 
 <body id="preview">
-  <p class="has-line-data" data-line-start="0" data-line-end="4">I am Tousif Tasrik student of university of
+  <p class="has-line-data" data-line-start="0" data-line-end="3">I am Tousif Tasrik student of university of
     scholars<br>
     14th batch CSE. I am struggling to install the oracle21c express edition on the uubuntu.<br>
-    I found the way to make it work. So, i am sharing the method.<br>
-    Any Queries you can get me in discord: tousiftasrik</p>
+    I found the way to make it work. So, i am sharing the method.</p>
   <hr>
-  <h1 class="code-line" data-line-start=6 data-line-end=7><a
-      id="Installation_of_Oracle21C_Express_Edition_in_Ubuntu_2204_6"></a>Installation of Oracle21C Express Edition in
-    Ubuntu 22.04+</h1>
-  <p class="has-line-data" data-line-start="8" data-line-end="9">Pulling the image of Oracle21C express edition using
-    docker</p>
-  <p class="has-line-data" data-line-start="10" data-line-end="11">So, first of all you need to install the docker . If
-    you have the docker installed then it is great.</p>
-  <p class="has-line-data" data-line-start="12" data-line-end="13">Follow the steps to setup the Oracle21C express
-    edition</p>
-  <p class="has-line-data" data-line-start="14" data-line-end="15">Step-1:</p>
-  <pre><code class="has-line-data" data-line-start="16" data-line-end="18" class="language-bash">sudo apt update
+  <h1 class="code-line" data-line-start="5" data-line-end="6"><a
+      id="_Install_Oracle_21C_Express_Edition_on_Ubuntu_2204_using_Docker__5"></a>🚀 Install Oracle 21C Express Edition
+    on Ubuntu 22.04+ using Docker 🐳</h1>
+  <p class="has-line-data" data-line-start="6" data-line-end="7"><em>By Tousif Tasrik, 14th Batch CSE, University of
+      Scholars</em></p>
+  <p class="has-line-data" data-line-start="8" data-line-end="10">📢 <strong>Education must be free.</strong><br>
+    📬 Any queries? Find me on Discord: <code>tousiftasrik</code></p>
+  <hr>
+  <h2 class="code-line" data-line-start="13" data-line-end="14"><a id="_Requirements_13"></a>🛠️ Requirements</h2>
+  <p class="has-line-data" data-line-start="15" data-line-end="17">🔹 A system with ubuntu installed<br>
+    🔹 Docker installed (<code>docker.io</code>)</p>
+  <hr>
+  <h2 class="code-line" data-line-start="20" data-line-end="21"><a id="_Installation_Steps_20"></a>⚙️ Installation Steps
+  </h2>
+  <h3 class="code-line" data-line-start="22" data-line-end="23"><a id="_Step_1_Update_your_packages_22"></a>✅ Step 1:
+    Update your packages</h3>
+  <pre><code class="has-line-data" data-line-start="24" data-line-end="26">sudo apt update
 </code></pre>
-  <p class="has-line-data" data-line-start="19" data-line-end="20">Step-2:</p>
-  <pre><code class="has-line-data" data-line-start="21" data-line-end="23" class="language-bash">sudo apt install docker.io
+  <h3 class="code-line" data-line-start="27" data-line-end="28"><a id="_Step_2_Install_Docker_27"></a>✅ Step 2: Install
+    Docker</h3>
+  <pre><code class="has-line-data" data-line-start="29" data-line-end="31">sudo apt install docker.io
 </code></pre>
-  <p class="has-line-data" data-line-start="24" data-line-end="25">Step-3:</p>
-  <pre><code class="has-line-data" data-line-start="26" data-line-end="28" class="language-bash">sudo systemctl <span class="hljs-built_in">enable</span> docker --now
+  <h3 class="code-line" data-line-start="32" data-line-end="33"><a id="_Step_3_Enable__Start_Docker_32"></a>✅ Step 3:
+    Enable &amp; Start Docker</h3>
+  <pre><code class="has-line-data" data-line-start="34" data-line-end="36">sudo systemctl <span class="hljs-built_in">enable</span> docker --now
 </code></pre>
-  <p class="has-line-data" data-line-start="29" data-line-end="30">Step-4: Pull the Oracle21C express edition docker
-    image</p>
-  <pre><code class="has-line-data" data-line-start="31" data-line-end="33" class="language-bash">sudo docker pull gvenzl/oracle-xe:<span class="hljs-number">21</span>-slim
+  <h3 class="code-line" data-line-start="36" data-line-end="37"><a
+      id="_Step_4_Pull_the_Oracle_21c_Docker_Image_36"></a>✅ Step 4: Pull the Oracle 21c Docker Image</h3>
+  <pre><code class="has-line-data" data-line-start="38" data-line-end="40">sudo docker pull gvenzl/oracle-xe:<span class="hljs-number">21</span>-slim
 </code></pre>
-  <p class="has-line-data" data-line-start="34" data-line-end="36">Step-5:<br>
-    Run the command below for the initial password setup and container setup</p>
-  <pre><code class="has-line-data" data-line-start="37" data-line-end="43" class="language-bash">sudo docker run <span class="hljs-operator">-d</span> \
+  <h3 class="code-line" data-line-start="41" data-line-end="42"><a
+      id="_Step5_Run_the_command_below_for_the_initial_password_setup_and_container_setup_41"></a>✅ Step-5: Run the
+    command below for the initial password setup and container setup</h3>
+  <pre><code class="has-line-data" data-line-start="43" data-line-end="49">sudo docker run <span class="hljs-operator">-d</span> \
   --name oracle-xe \
   -p <span class="hljs-number">1521</span>:<span class="hljs-number">1521</span> -p <span class="hljs-number">5500</span>:<span class="hljs-number">5500</span> \
   <span class="hljs-operator">-e</span> ORACLE_PASSWORD=&lt;your-default-password&gt; \
   gvenzl/oracle-xe:<span class="hljs-number">21</span>-slim
 </code></pre>
-  <p class="has-line-data" data-line-start="44" data-line-end="49">Host-name: localhost<br>
-    Port: 1521<br>
-    Service Name: XEPDB1<br>
-    User: system<br>
-    Password: YourPassword123</p>
-  <p class="has-line-data" data-line-start="50" data-line-end="51">
-    <code>ORACLE_PASSWORD=&lt;your-default-password&gt;</code> carefully change the line here ORACLE_PASSWORD = set your
-    password . it will be your default password. So, remember it.</p>
-  <h3 class="code-line" data-line-start=53 data-line-end=54><a
-      id="Check_if_the_Oracle21C_express_edition_installed_or_not_53"></a>Check if the Oracle21C express edition
-    installed or not</h3>
-  <p class="has-line-data" data-line-start="55" data-line-end="56">run this following command to know if it’s installed
+  <ul>
+    <li class="has-line-data" data-line-start="50" data-line-end="51">Host-name: localhost</li>
+    <li class="has-line-data" data-line-start="51" data-line-end="52">Port: 1521</li>
+    <li class="has-line-data" data-line-start="52" data-line-end="53">Service Name: XEPDB1</li>
+    <li class="has-line-data" data-line-start="53" data-line-end="54">User: system</li>
+    <li class="has-line-data" data-line-start="54" data-line-end="56">Password: YourPassword123</li>
+  </ul>
+  <p class="has-line-data" data-line-start="56" data-line-end="57">🧠 Replace &lt;your-default-password&gt; with a
+    secure password and remember it!</p>
+  <h2 class="code-line" data-line-start="60" data-line-end="61"><a
+      id="_Check_if_the_Oracle21C_express_edition_installed_or_not_60"></a>🧪 Check if the Oracle21C express edition
+    installed or not</h2>
+  <p class="has-line-data" data-line-start="62" data-line-end="63">run this following command to know if it’s installed
     or not</p>
-  <pre><code class="has-line-data" data-line-start="58" data-line-end="60" class="language-bash">sudo docker ps <span class="hljs-operator">-a</span>
+  <pre><code class="has-line-data" data-line-start="65" data-line-end="67">sudo docker ps <span class="hljs-operator">-a</span>
 </code></pre>
-  <p class="has-line-data" data-line-start="61" data-line-end="62">Will show the exact same output as the image below
+  <p class="has-line-data" data-line-start="68" data-line-end="69">Will show the exact same output as the image below
   </p>
-  <p class="has-line-data" data-line-start="63" data-line-end="64"><img src="https://i.imgur.com/ZNCxrU8.png"
+  <p class="has-line-data" data-line-start="70" data-line-end="71"><img
+      src="./Installation of Oracle21C Express Edition in Ubuntu 22.04+.md_files/ZNCxrU8.png"
       alt="enter image description here"></p>
-  <h3 class="code-line" data-line-start=66 data-line-end=67><a id="Start_the_Oracle21C_express_edition_66"></a>Start the
-    Oracle21C express edition</h3>
-  <pre><code class="has-line-data" data-line-start="69" data-line-end="71" class="language-bash">sudo docker start oracle-xe-<span class="hljs-number">21</span>c
+  <h2 class="code-line" data-line-start="72" data-line-end="73"><a id="_Starting__Stopping_the_Database_72"></a>▶️
+    Starting &amp; Stopping the Database</h2>
+  <h3 class="code-line" data-line-start="74" data-line-end="75"><a id="Start_the_Oracle21C_express_edition_74"></a>Start
+    the Oracle21C express edition</h3>
+  <pre><code class="has-line-data" data-line-start="77" data-line-end="79">sudo docker start oracle-xe-<span class="hljs-number">21</span>c
 </code></pre>
-  <h3 class="code-line" data-line-start=72 data-line-end=73><a id="Stop_the_Oracle21C_express_edition_72"></a>Stop the
-    Oracle21C express edition</h3>
-  <pre><code class="has-line-data" data-line-start="75" data-line-end="77" class="language-bash">sudo docker stop oracle-xe-<span class="hljs-number">21</span>c
+  <h3 class="code-line" data-line-start="80" data-line-end="81"><a id="Stop_the_Oracle21C_express_edition_80"></a>Stop
+    the Oracle21C express edition</h3>
+  <pre><code class="has-line-data" data-line-start="83" data-line-end="85">sudo docker stop oracle-xe-<span class="hljs-number">21</span>c
 </code></pre>
-  <h2 class="code-line" data-line-start=78 data-line-end=79><a id="Using_the_SQL_Plus_78"></a>Using the SQL Plus</h2>
-  <pre><code class="has-line-data" data-line-start="81" data-line-end="83" class="language-bash">sudo docker <span class="hljs-built_in">exec</span> -it oracle-xe-<span class="hljs-number">21</span>c sqlplus system/tousif@localhost/XEPDB1
+  <h2 class="code-line" data-line-start="86" data-line-end="87"><a id="_Connect_via_SQL_Plus_86"></a>💻 Connect via SQL
+    Plus</h2>
+  <pre><code class="has-line-data" data-line-start="89" data-line-end="91">sudo docker <span class="hljs-built_in">exec</span> -it oracle-xe-<span class="hljs-number">21</span>c sqlplus system/tousif@localhost/XEPDB1
 </code></pre>
-  <p class="has-line-data" data-line-start="84" data-line-end="85">After successfully ran the command you can see exact
+  <p class="has-line-data" data-line-start="92" data-line-end="93">After successfully ran the command you can see exact
     same image like the below</p>
-  <p class="has-line-data" data-line-start="86" data-line-end="87"><img src="https://i.imgur.com/ek4lcus.png"
+  <p class="has-line-data" data-line-start="94" data-line-end="95"><img
+      src="./Installation of Oracle21C Express Edition in Ubuntu 22.04+.md_files/ek4lcus.png"
       alt="enter image description here"></p>
-  <h3 class="code-line" data-line-start=88 data-line-end=89><a id="Important_Note_88"></a>Important Note</h3>
-  <p class="has-line-data" data-line-start="89" data-line-end="94">1.You are currently logged in as the system user.<br>
-    2.system/tousif@localhost/XEPDB1 change the tousif to your default password<br>
-    3.Everytime you start the sql plus you need to execute the<br>
-    –&gt; sudo docker start oracle-xe-21c<br>
-    command</p>
-  <h3 class="code-line" data-line-start=95 data-line-end=96><a id="Creating_a_new_user_95"></a>Creating a new user</h3>
-  <p class="has-line-data" data-line-start="97" data-line-end="98">Here you don’t need any kind of c## thing. You can
+  <h3 class="code-line" data-line-start="96" data-line-end="97"><a id="Important_Note_96"></a>Important Note</h3>
+  <ul>
+    <li class="has-line-data" data-line-start="97" data-line-end="98">1.You are currently logged in as the system user.
+    </li>
+    <li class="has-line-data" data-line-start="98" data-line-end="99">2.system/tousif@localhost/XEPDB1 change the tousif
+      to your default password</li>
+    <li class="has-line-data" data-line-start="99" data-line-end="103">3.Everytime you start the sql plus you need to
+      execute the<br>
+      –&gt; sudo docker start oracle-xe-21c<br>
+      command</li>
+  </ul>
+  <h3 class="code-line" data-line-start="103" data-line-end="104"><a id="_Creating_a_New_User_103"></a>👤 Creating a New
+    User</h3>
+  <p class="has-line-data" data-line-start="105" data-line-end="106">Here you don’t need any kind of c## thing. You can
     create user without it.</p>
-  <pre><code class="has-line-data" data-line-start="100" data-line-end="102" class="language-sql"><span class="hljs-operator"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">USER</span> tousiftasrik <span class="hljs-keyword">identified</span> <span class="hljs-keyword">by</span> tousif;</span>
+  <pre><code class="has-line-data" data-line-start="108" data-line-end="110"><span class="hljs-operator"><span class="hljs-keyword">CREATE</span> <span class="hljs-keyword">USER</span> tousiftasrik <span class="hljs-keyword">identified</span> <span class="hljs-keyword">by</span> tousif;</span>
 </code></pre>
-  <pre><code class="has-line-data" data-line-start="104" data-line-end="106" class="language-sql"><span class="hljs-operator"><span class="hljs-keyword">grant</span> dba <span class="hljs-keyword">to</span> tousiftasrik;</span>
+  <pre><code class="has-line-data" data-line-start="112" data-line-end="114"><span class="hljs-operator"><span class="hljs-keyword">grant</span> dba <span class="hljs-keyword">to</span> tousiftasrik;</span>
 </code></pre>
-  <pre><code class="has-line-data" data-line-start="108" data-line-end="110" class="language-sql">disconn;
+  <pre><code class="has-line-data" data-line-start="116" data-line-end="118">disconn;
 </code></pre>
-  <pre><code class="has-line-data" data-line-start="112" data-line-end="114" class="language-sql">conn;
+  <pre><code class="has-line-data" data-line-start="120" data-line-end="122">conn;
 </code></pre>
-  <pre><code class="has-line-data" data-line-start="116" data-line-end="119" class="language-sql">Enter user-name: tousiftasrik
+  <pre><code class="has-line-data" data-line-start="124" data-line-end="127">Enter user-name: tousiftasrik
 Enter password: tousif
 </code></pre>
-  <p class="has-line-data" data-line-start="121" data-line-end="124">Give it a star if you like it 🌟<br>
-    Follow me : <a href="https://github.com/lowercase-tousif">Click me</a><br>
-    Made by Tousif Tasrik 💖</p>
-
+  <ul>
+    <li class="has-line-data" data-line-start="129" data-line-end="130">Give it a star if you like it 🌟</li>
+    <li class="has-line-data" data-line-start="130" data-line-end="131">Follow me : <a
+        href="https://github.com/lowercase-tousif">Click me</a></li>
+    <li class="has-line-data" data-line-start="131" data-line-end="133">Made by Tousif Tasrik 💖</li>
+  </ul>
+  <hr>
+<br>
+<br>
 </body>
 
 </html>
